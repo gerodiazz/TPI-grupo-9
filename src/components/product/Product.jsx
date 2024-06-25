@@ -20,12 +20,12 @@ const Product = ({ product, addToCart }) => {
 
 Product.propTypes = {
   product: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-    price: PropTypes.number.isRequired,
-    image: PropTypes.string.isRequired,
-  }).isRequired,
-  addToCart: PropTypes.func.isRequired,
+    name: PropTypes.string,
+    description: PropTypes.string,
+    price: PropTypes.number,
+    image: PropTypes.string,
+  }),
+  addToCart: PropTypes.func
 };
 
 export default Product;

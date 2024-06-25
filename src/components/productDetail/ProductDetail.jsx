@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import PropTypes from "prop-types"
+import { useParams } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-const ProductDetailPage = ({ products, match }) => {
-  const productId = parseInt(match.params.productId, 10);
-
-  const product = products.find(prod => prod.id === productId);
+const ProductDetailPage = ({ products }) => {
+  const { productId } = useParams(); // Obtener el ID del producto de los parámetros de la URL
+  const product = products.find(prod => prod.id === parseInt(productId, 10));
 
   const [cart, setCart] = useState([]); // Estado del carrito de compras
 
@@ -31,16 +31,15 @@ const ProductDetailPage = ({ products, match }) => {
 };
 
 ProductDetailPage.propTypes = {
-    products: PropTypes.arrayOf(
-      PropTypes.shape({
-        id: PropTypes.number.isRequired,
-        name: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
-        price: PropTypes.number.isRequired,
-        image: PropTypes.string.isRequired,
-      })
-    ).isRequired,
-    match: PropTypes.object.isRequired, 
-  };
+  products: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      name: PropTypes.string.isRequired,
+      description: PropTypes.string.isRequired,
+      price: PropTypes.number.isRequired,
+      image: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};
 
 export default ProductDetailPage;

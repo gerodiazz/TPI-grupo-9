@@ -1,15 +1,15 @@
+import { Link } from 'react-router-dom'
+
 const Navbar = () => {
     return (
       <nav>
         <ul>
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Sobre Nosotros</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-        <div>
-          <a href="#">Carrito de Compras</a>
-          <a href="#">Usuario</a>
-        </div>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/cart">Cart</Link></li>
+        <li><Link to="/contact">Contact</Link></li>
+        <li><Link to="/login">Login</Link></li>
+        <li><Link to="/register">Register</Link></li>
+      </ul>
       </nav>
     );
   };

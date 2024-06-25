@@ -4,8 +4,8 @@ const CartPage = ({ cartItems, removeFromCart }) => {
   const totalPrice = cartItems.reduce((total, item) => total + item.price, 0);
 
   const handleCheckout = () => {
-    // Aquí puedes implementar la lógica para procesar el checkout
-    // Por ejemplo, enviar los productos a un servidor, calcular el total, etc.
+    //  lógica para procesar el checkout
+  
     alert('¡Compra realizada con éxito!');
   };
 
@@ -40,13 +40,13 @@ const CartPage = ({ cartItems, removeFromCart }) => {
 CartPage.propTypes = {
   cartItems: PropTypes.arrayOf(
     PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      name: PropTypes.string.isRequired,
-      price: PropTypes.number.isRequired,
-      image: PropTypes.string.isRequired,
+      id: PropTypes.number,
+      name: PropTypes.string,
+      price: PropTypes.number,
+      image: PropTypes.string,
     })
-  ).isRequired,
-  removeFromCart: PropTypes.func.isRequired,
+  ),
+  removeFromCart: PropTypes.func,
 };
 
 export default CartPage;

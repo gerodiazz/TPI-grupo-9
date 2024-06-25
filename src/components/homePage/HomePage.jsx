@@ -25,6 +25,6 @@ const HomePage = ({ addToCart }) => {
     );
   };
   HomePage.propTypes = {
-    addToCart: Proptypes.func.isRequired
+    addToCart: Proptypes.func
   };
   export default HomePage;
