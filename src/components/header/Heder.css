@@ -1,0 +1,38 @@
+header {
+    width: 100%;
+    background-color: #f8f9fa; /* Puedes ajustar el color de fondo a tu gusto */
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #343a40; /* Color de fondo del navbar */
+    color: white;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  nav div {
+    display: flex;
+    gap: 10px;
+  }
+  
+  nav div a {
+    color: white;
+    text-decoration: none;
+  }
