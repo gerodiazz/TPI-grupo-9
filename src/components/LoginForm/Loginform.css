@@ -1,0 +1,77 @@
+.login-container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 2em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    text-align: center;
+    
+  }
+  
+  /* Estilos del encabezado */
+  .login-container h2 {
+    margin-bottom: 1em;
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  /* Estilos del formulario */
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em; /* Espacio entre grupos de formularios */
+  }
+  
+  /* Estilos de cada grupo de formulario */
+  .form-group {
+    margin-bottom: 0.5em; /* Espacio entre cada grupo de formulario */
+  }
+  
+  /* Estilos de las etiquetas */
+  .form-group label {
+    display: block;
+    margin-bottom: 0.25em; /* Espacio entre etiquetas */
+    color: #555;
+  }
+  
+  /* Estilos de los inputs */
+  .form-group input {
+    width: calc(100% - 1em);
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  /* Estilos del botón de login */
+  .login-button {
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos del enlace para crear cuenta */
+  .login-container p {
+    margin-top: 1em;
+    color: #555;
+  }
+  
+  .login-container a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-container a:hover {
+    text-decoration: underline;
+  }

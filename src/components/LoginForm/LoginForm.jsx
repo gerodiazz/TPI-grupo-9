@@ -1,20 +1,21 @@
 import { useState } from 'react';
+import "./Loginform.css"
 
 const LoginForm = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
   const handleLogin = () => {
+    console.log("Email: ${email}, Password: ${password}");
     // Aquí puedes implementar la lógica para procesar el login
     // Por ejemplo, enviar los datos a un servidor, validar, etc.
-    console.log(`Email: ${email}, Password: ${password}`);
   };
 
   return (
-    <div>
+    <div className="login-container">
       <h2>Bienvenido a KO.MATES</h2>
-      <form>
-        <div>
+      <form className="login-form">
+        <div className="form-group">
           <label>Email:</label>
           <input
             type="email"
@@ -23,7 +24,7 @@ const LoginForm = () => {
             required
           />
         </div>
-        <div>
+        <div className="form-group">
           <label>Contraseña:</label>
           <input
             type="password"
@@ -32,7 +33,7 @@ const LoginForm = () => {
             required
           />
         </div>
-        <button type="button" onClick={handleLogin}>
+        <button type="button" className="login-button" onClick={handleLogin}>
           Login
         </button>
       </form>
